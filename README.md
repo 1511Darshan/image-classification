@@ -35,46 +35,52 @@ This project implements an end-to-end machine learning pipeline for handwritten 
 
 ---
 
-### Task 2: Machine Learning Model ✅ COMPLETED
-**File:** `task-2.ipynb`
+### Task 3: Natural Language Processing ✅ COMPLETED
+**File:** `task-3.ipynb`
 
 **Objectives:**
-- Implement Decision Tree Classifier for digit classification
-- Implement Logistic Regression for digit classification
-- Compare model performance using multiple metrics
-- Generate visualizations (confusion matrices, accuracy charts)
+- Perform sentiment analysis using VADER (Valence Aware Dictionary and sEntiment Reasoner)
+- Perform sentiment analysis using TextBlob
+- Compare sentiment analysis methods
+- Analyze subjectivity vs objectivity
+- Create visualizations for sentiment distribution
 
-**Models Implemented:**
-1. **Decision Tree Classifier**
-   - Max depth: 30
-   - Min samples split: 10
-   - Min samples leaf: 5
+**Methods Implemented:**
+1. **VADER Sentiment Analysis**
+   - Rule-based approach optimized for social media
+   - Provides: positive, negative, neutral, compound scores
+   - Compound score: -1 (most negative) to +1 (most positive)
 
-2. **Logistic Regression**
-   - Solver: lbfgs
-   - Max iterations: 1000
-   - Multi-class: multinomial
+2. **TextBlob Sentiment Analysis**
+   - Lexicon-based approach for general text
+   - Provides: polarity and subjectivity scores
+   - Polarity: -1 (negative) to +1 (positive)
+   - Subjectivity: 0 (objective) to 1 (subjective)
 
-**Evaluation Metrics:**
-- Accuracy
-- Precision (weighted)
-- Recall (weighted)
-- F1-Score (weighted)
-- Confusion Matrix
-- Classification Report
+**Analysis Results:**
+- 20 sample texts analyzed
+- Positive, Negative, and Neutral sentiment classification
+- Agreement rate between methods
+- Correlation analysis of scores
+- Subjectivity analysis
 
 **Output Visualizations:**
-- `confusion_matrices.png` - Side-by-side confusion matrices
-- `accuracy_comparison.png` - Accuracy across train/val/test
-- `metrics_comparison.png` - Detailed metrics comparison
+- `sentiment_distribution.png` - Sentiment count and score histograms
+- `sentiment_comparison.png` - Scatter plots of method comparison
+- Detailed analysis of 5 representative texts
 
 ---
+
+
 
 ## Technologies Used
 - Python 3.13
 - NumPy - Numerical computing
 - Pandas - Data manipulation
 - Scikit-learn - Machine learning utilities
+- NLTK - Natural Language Toolkit
+- TextBlob - Simplified NLP
+- Matplotlib & Seaborn - Data visualization
 - TensorFlow/Keras - Deep learning (for future tasks)
 - Jupyter Notebook - Interactive development
 
