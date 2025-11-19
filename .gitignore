@@ -29,25 +29,67 @@ env/
 ENV/
 env.bak/
 venv.bak/
+.venv
 
-# IDE
+# IDE and Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+*.sublime-project
+*.sublime-workspace
+.vim
 
-# Jupyter
+# Jupyter Notebooks
 .ipynb_checkpoints
 *.ipynb_checkpoints
+*.ipynb~
 
-# Data files (keep preprocessed .npy files, ignore raw data)
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+*.cover
+
+# Model artifacts and large files
+models/*.pt
+models/*.pth
+models/*.pkl
+models/*.h5
+models/*.onnx
+*.model
+*.weights
+
+# Data files
+data/raw/
+data/interim/
 *.idx1-ubyte
 *.idx3-ubyte
 *.csv
+*.tsv
 raw_data/
+dataset/
+
+# Experiment tracking
+mlruns/
+wandb/
+.mlflow
+*.log
 
 # OS
 .DS_Store
 Thumbs.db
+.env
+.env.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*~
+

@@ -1,0 +1,30 @@
+# Core dependencies
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.13
+scikit-learn>=1.3
+jupyter>=1.0
+notebook>=7.0
+Pillow>=10.0
+scikit-image>=0.21
+tqdm>=4.66
+
+# Deep learning framework - PyTorch (uncomment if using PyTorch)
+torch>=2.0
+torchvision>=0.15
+
+# Deep learning framework - TensorFlow (uncomment if using TensorFlow)
+# tensorflow>=2.14
+
+# NLP and text processing
+nltk>=3.8
+textblob>=0.17
+
+# Development and testing tools
+pytest>=7.4
+black>=23.7
+flake8>=6.1
+ruff>=0.1
+nbstripout>=0.6.1
+pre-commit>=3.3
